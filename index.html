@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История Гитлера</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header  id="navbar">
+        <nav>
+            <a href="index.html" class="active">Главная</a>
+            <a href="biography.html">Биография</a>
+          
+            <a href="ideology.html">Идеология</a>
+            <a href="impact.html">Последствия</a>
+          
+        </nav>
+    </header> 
+
+    <main>
+        <h1>Добро пожаловать на сайт об истории Гитлера</h1>
+        <section>
+            <h2>Краткое введение</h2>
+            <p>Этот сайт предоставляет полную информацию о жизни Адольфа Гитлера, его политической карьере, роли во Второй мировой войне и последствиях его действий для мира.</p>
+            <button onclick="alert('Спасибо за посещение!')">Узнать больше</button>
+        </section>
+
+        <section>
+            <h2>Почему это важно?</h2>
+            <p>Изучение этой темы позволяет глубже понять причины крупнейших мировых конфликтов и важность предотвращения повторения ошибок прошлого.</p>
+            <img src="https://gdb.rferl.org/406ac255-367b-4c62-95c2-1d67075adbee_w1080_h608.jpg" alt="Иллюстрация исторической эпохи">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 История Гитлера. Все права защищены. | <a href="#" style="color: #ffa500; text-decoration: none;">Контакты</a></p>
+    </footer>
+    <script>
+        let lastScrollY = window.scrollY; // Последняя позиция скролла
+        const navbar = document.getElementById("navbar"); // Навигация
+    
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                navbar.style.transform = "translateY(-100%)"; // Скрыть навигацию
+            } else {
+                navbar.style.transform = "translateY(0)"; // Показать навигацию
+            }
+            lastScrollY = window.scrollY; // Обновить позицию скролла
+        });
+    </script>
+    
+</body>
+</html>
